@@ -1,0 +1,112 @@
+:root {
+  --light: white;
+  --base: lightslategray;
+  --text: black;
+  --accent: rgb(128, 0, 0);
+  --ff-ss: Arial, Helvetica, sans-serif;
+  --ff-s: 'Times New Roman', Times, serif;
+  --fs-h1: 5rem;
+  --fs-h3: 3rem;
+  --fw-b: 700;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-size: 2.1rem;
+}
+#title {
+  line-height: 1.6rem;
+  padding: 2em;
+  margin: 7rem auto;
+  text-align: center;
+  color: var(--light);
+  font-family: var(--ff-s);
+  font-weight: var(--fw-b);
+  font-size: var(--fs-h1);
+  background-color: var(--accent);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+#main {
+  background-color: var(--base);
+  border-radius: 2rem;
+  padding-bottom: 1rem;
+  box-shadow: 2px 2px 2px 1px var(--accent);
+}
+#img-div {
+  background-color: white;
+  padding: 5rem 2rem 2rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 2px 1px var(--accent);
+}
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+#img-caption {
+  color: var(--text);
+  text-align: center;
+  padding: 2rem 0;
+}
+#tribute-info {
+  padding: 7rem 2rem;
+}
+#tribute-info h3 {
+  text-align: center;
+  font-size: var(--fs-h3);
+  color: var(--accent);
+  font-family: var(--ff-ss);
+}
+#tribute-info ul {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  list-style: none;
+  text-align: left;
+  text-transform: initial;
+}
+#tribute-info li::before {
+  content: '\220e';
+  color: var(--accent);
+  display: iniline-block;
+  width: 5em;
+  margin-left: -1.2em;
+}
+#tribute-info p {
+  padding: 1rem;
+  text-align: center;
+  font-family: var(--ff-ss);
+}
+#tribute-info blockquote {
+  text-align: center;
+  padding: 1rem;
+  color: var(--accent);
+}
+#tribute-info blockquote cite {
+  color: var(--text);
+}
+#tribute-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+#tribute-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-b);
+}
+#tribute-link:active {
+  color: var(--light);
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  #img-div {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
